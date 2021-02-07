@@ -26,6 +26,8 @@ function Search() {
         }
 
     }
+
+    
     const apiCall = ()=> {
         let  searchTerm = document.getElementById("bookSearch").value
         searchTerm = validateString(searchTerm)

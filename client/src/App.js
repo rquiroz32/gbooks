@@ -15,7 +15,7 @@ function App() {
       <Jumbotron />
       <Route exact path ="/"component ={Search}/>
       <Route exact path ="/Search" component = {Search}/>
-      <Route exact path ="/Saved" /*component = {}*//>
+      <Route exact path ="/Saved" /*component = {Saved}*//>
       </div>
     </Router >
 

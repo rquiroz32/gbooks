@@ -9,15 +9,19 @@ function List(props) {
     }
 
     // const checkForBooks = ()=>{
+    //     let jsx
     //     if (props.books){
     //         for (let i=0; i<props.books.length;i++){
-              
+             
 
-    //             return(<CardItem {...props.books[i]}/>)
+    //        jsx += <CardItem {...props.books[i]}/>
     //         }            
     //     }else{
     //         console.log("props.books does not exist")
+            
+    //          jsx = '<div></div>'
     //     }
+    //      console.log(JSON.stringify(jsx))
     // }
 
 
@@ -28,7 +32,8 @@ function List(props) {
             <ul className="list-group" style={Styles.cardItemStyle}>
                
                {/* {checkForBooks()} */}
-               {props.books.length != 0 ? props.books.map( book => {return(<CardItem {...book}/>) }) :  console.log("nada")}        
+               {/* {props.books.length != 0 ? props.books.map( book => {return(<CardItem {...book}/>) }) :  console.log("nada")}         */}
+               {!props.books ? console.log('props.books does not exist') : props.books.map( book => {return(<CardItem {...book}/>) })}
 
 
             </ul>
