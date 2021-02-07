@@ -11,27 +11,26 @@ function List(props) {
     // const checkForBooks = ()=>{
     //     if (props.books){
     //         for (let i=0; i<props.books.length;i++){
-    //             let cardItemArray = []
-                
-    //             cardItemArray.push(<CardItem {...props.books[i]}/>)
+              
 
-    //             return(cardItemArray)
+    //             return(<CardItem {...props.books[i]}/>)
     //         }            
     //     }else{
     //         console.log("props.books does not exist")
     //     }
     // }
 
+
+
+
     return ([<h1> RESULTS</h1>,
-        <div class=" " style={Styles.cardItemStyle}>
-            <ul class="list-group" style={Styles.cardItemStyle}>
-                {/* {checkForBooks()} */}
-                {/* {props.books.length!=0 ? props.books.map((book)=>{<CardItem {...book}/>}): null} */}
-                {/* <CardItem book={props.books[0]}/>    */}
+        <div className=" " style={Styles.cardItemStyle}>
+            <ul className="list-group" style={Styles.cardItemStyle}>
+               
+               {checkForBooks()}
+               {/* {props.books.length != 0 ? props.books.map( book => {return(<CardItem {...book}/>) }) :  console.log("nada")}         */}
 
-                {props.books.length != 0 ? props.books.map( book => {return(<CardItem {...book}/>) }) :  console.log("nada")}
 
-                
             </ul>
         </div>
     ])
