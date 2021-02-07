@@ -1,5 +1,5 @@
 import List from "../Components/List";
-import React, {useState, useEeffect} from 'react';
+import React, {useState} from 'react';
 import API from "../util/API";
 
 function Search() {
@@ -40,7 +40,7 @@ function Search() {
 
         API.searchBooks(searchTerm).then(res=>{
             setBook(res.data.items)
-            // console.log(res)
+            console.log("response data is below \n" + res)
         }).catch((err)=>{
             console.log(err)
             setBook()
