@@ -19,7 +19,9 @@ function CardItem(props) {
         API.postBooks(book).then((res)=>{
             alert(`${book.title} has been successfully saved to your database, please click on Saved to view books you have saved`)
 
-        }).catch(err => console.log(err))
+        }).catch(err => {
+            alert("Error saving this book to the database, please try saving a different book.")
+            console.log(err)})
         //need to make api calls to post books to db
     }
 
