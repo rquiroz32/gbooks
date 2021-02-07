@@ -18,7 +18,12 @@ if(process.env.NODE_ENV==="production"){
 app.use(routes)
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/gbooks");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/gbooks", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
+});
 mongoose.connection.on('connected', ()=>{console.log("SUCCESSFULLY CONNECTED TO DB")})
 mongoose.connection.on('error', ()=>{console.log("Error connecting to mongo database")})
 
