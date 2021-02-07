@@ -1,24 +1,20 @@
 import SavedBook from "./SavedBooks"
 
-function Results(props){
+function Results(props) {
 
-    const Styles ={
-        cardItemStyle:{
+    const Styles = {
+        cardItemStyle: {
             width: "100%"
         }
     }
 
-    return(
-        [<h1> Saved Books</h1>,
-            <div className=" " style={Styles.cardItemStyle}>
-                <ul className="list-group" style={Styles.cardItemStyle}>
-                   
-                
-                   {!props.books ? console.log('props.books does not exist') : props.books.map( book => {return(<SavedBook {...book}/>) })}
-
-    
-                </ul>
-            </div>
+    return (
+        [<h1 key={"SavedBooksHeader"} > Saved Books</h1>,
+        <div key={"SavedBooksContainer"} className=" " style={Styles.cardItemStyle}>
+            <ul key={"SavedBooksList"} className="list-group" style={Styles.cardItemStyle}>
+                {!props.books ? console.log('props.books does not exist') : props.books.map( book => { return (<SavedBook key={book._id || "test"} {...book} />) })}
+            </ul>
+        </div>
         ]
     )
 }

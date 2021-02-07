@@ -5,7 +5,7 @@ import API from "../util/API";
 function Search() {
 
     const [books, setBook] = useState([{
-        id: "",
+        id: "7",
         volumeInfo:{
             title: "Deep Six",
             authors: ["Thom E. Gemcity"],
@@ -59,7 +59,7 @@ function Search() {
                 <button type="Submit" onClick={()=> apiCall()} className="ml-sm-3 btn btn-primary">Submit</button>
             </div>
             <hr />
-            <List books = {books}/>
+            <List key={"SearchResults"} books = {books}/>
 
         </div>)
 

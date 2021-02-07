@@ -28,7 +28,7 @@ function CardItem(props) {
 
     return (
     
-        <li className="list-group-item" key = {props.id} data-id ={props.id}>
+        <li  key = {props.id} className="list-group-item" data-id ={props.id}>
             {console.log(JSON.stringify(props))}
             <h4>{props.volumeInfo.title}</h4>
            <img src= {!props.volumeInfo.imageLinks.smallThumbnail ? null : props.volumeInfo.imageLinks.smallThumbnail } className="mr-sm-3"/>

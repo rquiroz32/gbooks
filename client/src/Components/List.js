@@ -27,13 +27,10 @@ function List(props) {
 
 
 
-    return ([<h1> RESULTS</h1>,
-        <div className=" " style={Styles.cardItemStyle}>
-            <ul className="list-group" style={Styles.cardItemStyle}>
-               
-               {/* {checkForBooks()} */}
-               {/* {props.books.length != 0 ? props.books.map( book => {return(<CardItem {...book}/>) }) :  console.log("nada")}         */}
-               {!props.books ? console.log('props.books does not exist') : props.books.map( book => {return(<CardItem {...book}/>) })}
+    return ([<h1 key={"SearchResultsHeader"} > RESULTS</h1>,
+        <div key={"SearchResultsContainer"} style={Styles.cardItemStyle}>
+            <ul key={"SearchResultsList"} className="list-group" style={Styles.cardItemStyle}>               
+               {!props.books ? console.log('props.books does not exist') : props.books.map( book => {return(<CardItem key={book.id} {...book}/>) })}
 
 
             </ul>

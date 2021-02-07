@@ -27,8 +27,8 @@ function Saved(){
     },[])
 
     return(
-    <div className="container-fluid">        
-        <Results books={books} />
+    <div  key={"SavedBooksContainerDiv"} className="container-fluid">        
+        <Results  key={"SavedBooks"} books={books} />
     </div>)
 }
 
