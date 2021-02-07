@@ -13,9 +13,7 @@ function Saved(){
             imageLinks:{
                 smallThumbnail: "http://books.google.com/books/content?id=DE5qzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
             }
-        }
-        
-
+        }     
     }]) 
 
 

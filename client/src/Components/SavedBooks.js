@@ -9,23 +9,11 @@ function SavedBook(props) {
     }
 
     const delOnClick = (props) =>{
-        console.log('clicked')
-        console.log(props)
         
-        let book = {
-            title: props.title,
-            authors: props.authors,
-            description: props.description,
-            image: props.image,
-            link: props.link
-        }
-        console.log(book)
-        API.postBooks(book).then((res)=>{
-            console.log('success, response below')
-            console.log(res)
-
+       API.deleteBooks(props._id).then(()=>{          
+            window.location.reload()
         }).catch(err => console.log(err))
-        //need to make api calls to post books to db
+        
     }
 
 

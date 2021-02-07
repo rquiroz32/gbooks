@@ -8,9 +8,6 @@ function CardItem(props) {
     }
 
     const saveOnClick = (props) =>{
-        console.log('clicked')
-        console.log(props)
-        
         let book = {
             title: props.volumeInfo.title,
             authors: props.volumeInfo.authors,
@@ -18,10 +15,9 @@ function CardItem(props) {
             image: props.volumeInfo.imageLinks.smallThumbnail,
             link: props.volumeInfo.previewLink
         }
-        console.log(book)
+        
         API.postBooks(book).then((res)=>{
-            console.log('success, response below')
-            console.log(res)
+            alert(`${book.title} has been successfully saved to your database, please click on Saved to view books you have saved`)
 
         }).catch(err => console.log(err))
         //need to make api calls to post books to db
