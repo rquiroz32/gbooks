@@ -27,8 +27,8 @@ function List(props) {
         <div className=" " style={Styles.cardItemStyle}>
             <ul className="list-group" style={Styles.cardItemStyle}>
                
-               {checkForBooks()}
-               {/* {props.books.length != 0 ? props.books.map( book => {return(<CardItem {...book}/>) }) :  console.log("nada")}         */}
+               {/* {checkForBooks()} */}
+               {props.books.length != 0 ? props.books.map( book => {return(<CardItem {...book}/>) }) :  console.log("nada")}        
 
 
             </ul>
