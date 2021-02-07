@@ -1,12 +1,36 @@
-import React, {useState, useEeffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import API from "../util/API";
-
+import List from "../Components/List"
+import Results from '../Components/Results';
 
 function Saved(){
 
-    return(
-    <div>
+    const [books, setBook] = useState([{
+        id: "",
+        volumeInfo:{
+            title: "Title",
+            description: "placeholder",
+            imageLinks:{
+                smallThumbnail: "http://books.google.com/books/content?id=DE5qzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+            }
+        }
+        
 
+    }]) 
+
+
+   
+
+    useEffect(()=>{
+        API.getBooks().then(res=>{
+            console.log(res)
+            setBook(res.data)
+        }).catch(err=>console.log(err))
+    },[])
+
+    return(
+    <div className="container-fluid">        
+        <Results books={books} />
     </div>)
 }
 

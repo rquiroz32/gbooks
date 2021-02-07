@@ -13,5 +13,8 @@ export default {
     },
     postBooks: function(book){
         return axios.post("/api/books/", book, options)
+    },
+    getBooks: function(){
+        return axios.get('/api/books/')
     }
 };

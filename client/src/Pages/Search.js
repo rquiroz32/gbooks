@@ -7,7 +7,7 @@ function Search() {
     const [books, setBook] = useState([{
         id: "",
         volumeInfo:{
-            title: "temp",
+            title: "Title",
             description: "placeholder",
             imageLinks:{
                 smallThumbnail: "http://books.google.com/books/content?id=DE5qzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
