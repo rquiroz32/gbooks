@@ -13,6 +13,7 @@ This is a full MERN stack application for searching for books using the google b
 * [License](#License)
 
 
+
 ## Installation
 npm install then npm run start
 
@@ -23,6 +24,7 @@ feel free to reference as needed
 To report bugs or suggest enhancements please use my contact info listed further down below
 
 ## Testing
+
 Try entering in special characters, as of time of writing this README that still seems to be a bug I can't figure out, as the API query returns data but it's REACT that seems to not like the response
 
 ## LinkToApp
@@ -31,6 +33,7 @@ https://cryptic-caverns-34586.herokuapp.com/
 ## Questions
 * https://github.com/rquiroz32
 * or email me at: rquiroz3290@gmail.com
+
 
 ## License
 This application is covered under the GNU GPL v3 license 
