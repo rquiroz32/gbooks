@@ -4,13 +4,13 @@ This is a full MERN stack application for searching for books using the google b
 
 ## Table of Contents
 
-*[Installation](#installation)
-*[Usage](#usage)
-*[Contributing](#Contributing)
-*[Testing](#Testing)
-*[LinkToApp](#LinkToApp)
-*[Questions](#Questions)
-*[License](#License)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#Contributing)
+* [Testing](#Testing)
+* [LinkToApp](#LinkToApp)
+* [Questions](#Questions)
+* [License](#License)
 
 
 ## Installation
