@@ -5,15 +5,15 @@ import API from "../util/API";
 function Search() {
 
     const [books, setBook] = useState([{
-        id: "7",
+        id: "lPV1CQAAQBAJ",
         volumeInfo:{
-            title: "Deep Six",
-            authors: ["Thom E. Gemcity"],
-            description: "The year is 2006. L.J. Tibbs is rebellious by nature and scarred by childhood tragedy in the southern community of Specter. An outcast in his own world, he drinks to alleviate the burden of his Messianic complex. The aftermath of one of his hair-raising investigations finds L.J. Tibbs right in the middle of an unspeakable crime that cost a young woman her life. Tibbs finds himself trapped in the underworld of a local crime syndicate which has a need to administer a terrifying revenge on the family members of a rival family. But the revenge they seek is a two-edged sword, and the price is Tibbs\' own sanity as he recklessly pursues his quarry in a chilling, double-twist climax that surpasses anything Gemcity has written before.",
+            title: "The Test Book",
+            authors: ["Mikael Krogerus","Roman Tschäppeler"],
+            description: "An essential library of tests for self-knowledge and success, from the strategic thinking experts behind the international bestseller The Decision Book. Are you clever? Can you self-motivate? Are you creative? How do you handle money? Can you lead others well? With their trademark style and wit, best-selling authors Mikael Krogerus and Roman Tschäppeler present sixty-four tests spanning intelligence and personality type; creativity and leadership skills; fitness and lifestyle; and knowledge and belief. From what you see in a Rorschach test to comparing your workout against a Navy SEAL’s, from EQ to IQ and Myers-Briggs in between, The Test Book offers a panoply of ways to assess yourself and decide what you need to succeed. As Krogerus and Tschäppeler highlight, you can only know whether you have the right skills, the right job, or the right partner when you know where you stand right now. Small enough to fit in your pocket but packed with insight and good humor, The Test Book delivers a quick, fun way to evaluate your life and happiness.",
             imageLinks:{
-                smallThumbnail: "https://lh3.googleusercontent.com/proxy/rHod6cQgOiZXBT6kjjZqeWq1nP3HU70kd5lf-xJZVK3hj1gWOwnxnQXStwPp6OVJNzD2uQfIyCABqKudiv41RlSbOTYPFMi0F1M_y-e8VQ"
+                smallThumbnail: "http://books.google.com/books/content?id=lPV1CQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
             },
-            previewLink:"http://seanmurray-ultima.wifeo.com/mcgee-book.php"
+            previewLink:"https://books.google.com/books?id=lPV1CQAAQBAJ&printsec=frontcover&dq=test&hl=&as_pt=BOOKS&cd=1&source=gbs_api#v=onepage&q=test&f=false"
         }
         
 
