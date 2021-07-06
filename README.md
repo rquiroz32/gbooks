@@ -1,6 +1,6 @@
 # gbooks         [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
-This was a homework assignment for my coding bootcamp course where we were tasked to build a full MERN stack application for searching for books using the google books API and storing them in a Mongo db"
+This is a full MERN stack application for searching for books using the google books API and storing them in a Mongo db"
 
 ## Table of Contents
 
