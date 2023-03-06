@@ -1,4 +1,10 @@
 # Gbooks         [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+## UPDATE:
+
+This has been temporarily deperecated as the Heroku Backend no longer exists, and I need to find an alternative to deploy to. 
+
+
 ## Description
 This is a full MERN stack application for searching for books using the google books API and storing them in a Mongo db"
 
